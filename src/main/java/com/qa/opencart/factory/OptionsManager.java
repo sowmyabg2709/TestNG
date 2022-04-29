@@ -17,6 +17,8 @@ public class OptionsManager {
 		this.prop=prop;
 	}
 	
+
+	
 	public ChromeOptions getChromeOptions() {
 		co=new ChromeOptions();
 		if(Boolean.parseBoolean(prop.getProperty("headless").trim()))co.addArguments("--headless");
