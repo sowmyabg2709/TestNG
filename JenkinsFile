@@ -8,7 +8,7 @@ agent any
 
             }
         }
- //for windows ---> bat "mvn clean install"   
+  
         stage('Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
