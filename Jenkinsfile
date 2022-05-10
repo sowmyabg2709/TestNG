@@ -17,7 +17,6 @@ agent any
             }
         }
                 
-     
         stage('Publish Allure Reports') {
            steps {
                 script {
