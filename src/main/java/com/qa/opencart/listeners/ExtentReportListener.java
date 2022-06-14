@@ -43,7 +43,8 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
                 e.printStackTrace();
             }
         }
-        final ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("./build/TestExecutionReport.html");
+        final ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER+FILE_NAME);
+        //final ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("TestExecutionReport.html");
         htmlReporter.config().setDocumentTitle("Automation Test Results");
         htmlReporter.config().setReportName("Automation Test Results");
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
